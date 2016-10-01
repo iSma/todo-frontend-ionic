@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { Todos } from '../pages/todos/todos';
+import { Tags } from '../pages/tags/tags';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    Todos,
+    Tags
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -14,7 +16,8 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    Todos,
+    Tags
   ],
   providers: []
 })
